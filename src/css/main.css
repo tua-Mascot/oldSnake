@@ -1,0 +1,150 @@
+@font-face {
+  font-family: 'Pixeboy';
+  src: url('../font/Pixeboy.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Pixeboy', Arial, Helvetica, sans-serif;
+  color: #000000;
+  background-color: #000000;
+}
+
+.global-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#old-snake-canvas {
+  width: 800px;
+  height: 600px;
+  background: #837e00; /* #837e00 */
+  z-index: 1;
+  /* background-image: url('../img/BG.png');
+	background-repeat: no-repeat; */
+}
+
+.add {
+  position: absolute;
+  margin-top: 20px;
+  width: 800px;
+  height: 600px;
+  z-index: 2;
+}
+
+.add__start {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 760px;
+  height: 540px;
+  font-size: 40px;
+}
+
+.add__start > div {
+  display: flex;
+}
+
+.add__start > div > img {
+  margin: 0.4em 0.2em;
+}
+
+.add__start > div > p {
+  margin: 0.4em 0.2em;
+}
+
+.start__info-top {
+  padding-top: 300px;
+}
+
+.start__info-bottom {
+  font-size: 20px;
+  padding-top: 0px;
+}
+
+.add__end {
+  display: none;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 760px;
+  height: 540px;
+  background: #ffffff;
+  font-size: 60px;
+  animation-name: start;
+  animation-duration: 1s;
+}
+
+@keyframes start {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.add__end > div > p {
+  margin: 0;
+}
+
+.end__btn {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  font-family: 'Pixeboy', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 6px 6px;
+  cursor: pointer;
+}
+
+.eff {
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  background: #837e00;
+  /* background-image: url('../img/Old_Eff.png');
+	background-blend-mode: multiply; */
+  mix-blend-mode: multiply;
+  opacity: 0.9;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.eff__img {
+  opacity: 0.2;
+}
+
+.eat-eff {
+  animation-name: eat-eff;
+  animation-duration: 0.2s;
+  z-index: 3;
+}
+
+@keyframes eat-eff {
+  0% {
+    background: #757208;
+  }
+  100% {
+    background: #757208;
+  }
+  0% {
+    background: #757208;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.unhidden {
+  display: flex;
+}

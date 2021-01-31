@@ -1,0 +1,15 @@
+{
+  "name": "old-snake",
+  "version": "0.2.0",
+  "description": "Snake game. Vanilla JS + Canvas + Figma practice.",
+  "keywords": [],
+  "private": true,
+  "author": "tua.Mascot (Kirill P.)",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "eslint": "^7.18.0"
+  }
+}

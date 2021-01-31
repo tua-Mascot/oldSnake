@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="img/s-body-pattern.png"
+      type="image/gif"
+      sizes="16x16"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Old Snake</title>
+  </head>
+
+  <body>
+    <div class="global-wrapper">
+      <canvas id="old-snake-canvas"></canvas>
+      <div class="eff global-wrapper">
+        <img class="eff__img" src="img/old-eff.png" alt="" />
+      </div>
+      <div class="add global-wrapper">
+        <div class="add__start">
+          <div class="start__info-top">
+            <p>Press</p>
+            <img src="img/wasd.png" width="64" height="42" alt="WASD" />
+            <p>or</p>
+            <img src="img/arrows.png" width="64" height="42" alt="Arrows" />
+          </div>
+          <div class="start__info-bottom">
+            <img src="img/s-body-pattern.png" width="20" height="20" alt="" />
+            <p>- snake</p>
+            <img src="img/s-food.png" alt="" width="20" height="20" />
+            <p>- eat</p>
+            <img src="img/enm.png" alt="" width="20" height="20" />
+            <p>- don't eat</p>
+          </div>
+        </div>
+        <div class="add__end">
+          <div>
+            <p>YOU DIED</p>
+          </div>
+          <div>
+            <button
+              type="button"
+              class="end__btn"
+              onclick="window.location.reload()"
+            >
+              F U! I want to try again!
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
